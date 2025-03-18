@@ -1,15 +1,22 @@
 [build]
-  command = "next build"
-  publish = ".next"
+  command = "bun run build"
+  publish = "build"
 
-[build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true"
-  NEXT_PUBLIC_RECIPIENT_ADDRESS = "0xbCcf6DA049fe3Ab996Abb6f960174E266a9835f3"
+[dev]
+  framework = "next"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[functions]
+  node_bundler = "esbuild"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[images]
+  remote_images = [
+    "https://ext.same-assets.com/.*",
+    "https://source.unsplash.com/.*",
+    "https://images.unsplash.com/.*",
+    "https://ugc.same-assets.com/.*"
+  ]

@@ -1,82 +1,36 @@
-# ZNode Rewards
-
-ZNode Rewards is a web application that allows users to claim their ZNode rewards across multiple blockchain networks.
-
-## Features
-
-- Connect wallet using MetaMask or other Ethereum-compatible wallets
-- Claim rewards on Ethereum, Arbitrum, Optimism, and Base networks
-- Real-time gas price calculation for optimal transactions
-- Responsive design for mobile and desktop users
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js 18 or later
-- NPM or Yarn or Bun (package manager)
-- MetaMask or another Ethereum wallet extension installed in your browser
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### Local Development
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/znode-rewards.git
-   cd znode-rewards
-   ```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-2. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   bun install
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-3. Create a `.env.local` file in the root directory with the following content:
-   ```
-   NEXT_PUBLIC_RECIPIENT_ADDRESS=0xbCcf6DA049fe3Ab996Abb6f960174E266a9835f3
-   NEXT_PUBLIC_SITE_URL=http://localhost:3000
-   ```
+## Learn More
 
-4. Start the development server:
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   # or
-   bun run dev
-   ```
+To learn more about Next.js, take a look at the following resources:
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Deployment
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-For detailed deployment instructions, please see [DEPLOYMENT.md](./DEPLOYMENT.md).
+## Deploy on Vercel
 
-### Quick Deployment Options
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- [Deploy to Vercel](https://vercel.com/import/git?s=https://github.com/yourusername/znode-rewards)
-- [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/znode-rewards)
-
-## Environment Variables
-
-- `NEXT_PUBLIC_RECIPIENT_ADDRESS`: Ethereum address to receive funds from claims
-- `NEXT_PUBLIC_SITE_URL`: The URL of your website (for meta tags)
-
-## Technical Stack
-
-- [Next.js](https://nextjs.org/) - React framework
-- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Ethers.js](https://docs.ethers.io/v5/) - Ethereum library
-- [Shadcn UI](https://ui.shadcn.com/) - UI component library
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
